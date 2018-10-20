@@ -1,10 +1,12 @@
 # scrolling-title
 If your page title is too long it will start scrolling like a marquee
 
+**Requires jQuery**
+
     $(document).ready(function() {
       // Get the existing title
       var title = $('title').text()+" ";
-    
+
       //Check the length of the title, if its greater than 33 then scroll
       if (title.length>33){
         setInterval(function() {
